@@ -1,0 +1,176 @@
+/* =========================================================
+   SrawungSpace — Custom Styles
+   Warm, traditional, modern Javanese community theme
+   ========================================================= */
+
+:root {
+    --sw-brown-dark: #3b241a;
+    --sw-brown: #5c3a28;
+    --sw-maroon: #7a2e2e;
+    --sw-gold: #c98b2e;
+    --sw-gold-light: #e8b968;
+    --sw-cream: #faf3e8;
+    --sw-cream-soft: #f3e6d3;
+    --sw-text: #3b2f2a;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: var(--sw-text);
+    background-color: var(--sw-cream);
+}
+
+h1, h2, h3, h4, h5, .sw-heading,
+.navbar-brand {
+    font-family: 'Playfair Display', serif;
+}
+
+/* Navbar */
+.sw-navbar {
+    background: linear-gradient(90deg, var(--sw-brown-dark), var(--sw-maroon));
+}
+
+.sw-navbar .nav-link {
+    color: #f3e6d3;
+    font-weight: 500;
+}
+
+.sw-navbar .nav-link:hover {
+    color: var(--sw-gold-light);
+}
+
+.sw-navbar .navbar-brand {
+    color: #fff;
+    font-size: 1.6rem;
+}
+
+/* Hero */
+.sw-hero {
+    min-height: 78vh;
+    background:
+        linear-gradient(160deg, rgba(59,36,26,0.88), rgba(122,46,46,0.82)),
+        repeating-linear-gradient(45deg, rgba(255,255,255,0.04) 0 2px, transparent 2px 14px);
+    background-size: cover;
+}
+
+.sw-hero h1 {
+    font-family: 'Playfair Display', serif;
+}
+
+/* Page header (inner pages) */
+.sw-page-header {
+    background: linear-gradient(120deg, var(--sw-brown-dark), var(--sw-maroon));
+}
+
+.sw-page-header h1 {
+    font-family: 'Playfair Display', serif;
+}
+
+/* CTA band */
+.sw-cta {
+    background: linear-gradient(120deg, var(--sw-maroon), var(--sw-brown-dark));
+}
+
+/* Headings accent */
+.sw-heading {
+    color: var(--sw-brown-dark);
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.sw-heading::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 60px;
+    height: 3px;
+    background: var(--sw-gold);
+}
+
+.text-center .sw-heading::after {
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Cards */
+.sw-card {
+    border: 1px solid var(--sw-cream-soft);
+    border-radius: 14px;
+    overflow: hidden;
+    transition: transform .2s ease, box-shadow .2s ease;
+    background: #fff;
+}
+
+.sw-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 24px rgba(59,36,26,0.15) !important;
+}
+
+.sw-card-img,
+.sw-card-img-lg,
+.sw-gallery-item {
+    background: linear-gradient(135deg, var(--sw-gold-light), var(--sw-maroon));
+    background-size: 200% 200%;
+    position: relative;
+}
+
+.sw-card-img {
+    height: 170px;
+}
+
+.sw-card-img-lg {
+    height: 320px;
+    border-radius: 14px;
+}
+
+.sw-gallery-item {
+    height: 200px;
+    border-radius: 10px;
+}
+
+/* Buttons */
+.sw-btn-outline {
+    border: 1px solid var(--sw-maroon);
+    color: var(--sw-maroon);
+    background: transparent;
+    font-weight: 500;
+}
+
+.sw-btn-outline:hover {
+    background: var(--sw-maroon);
+    color: #fff;
+}
+
+.btn-warning {
+    background-color: var(--sw-gold);
+    border-color: var(--sw-gold);
+    color: #fff;
+}
+
+.btn-warning:hover {
+    background-color: var(--sw-gold-light);
+    border-color: var(--sw-gold-light);
+    color: var(--sw-brown-dark);
+}
+
+/* Value cards (About page) */
+.sw-value-card {
+    background: #fff;
+    border: 1px solid var(--sw-cream-soft);
+    border-radius: 14px;
+}
+
+/* Contact card */
+.sw-contact-card {
+    background: #fff;
+    border: 1px solid var(--sw-cream-soft);
+    border-radius: 14px;
+    box-shadow: 0 8px 20px rgba(59,36,26,0.08);
+}
+
+/* Footer */
+.sw-footer {
+    background: var(--sw-brown-dark);
+    color: #e8dcc9;
+}
